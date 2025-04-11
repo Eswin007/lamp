@@ -34,6 +34,19 @@ body {
     position: relative;
     overflow: hidden;
 
+
+
+
+    // .big-glow {
+    //     background-image: radial-gradient(rgb(255, 133, 96) 0, transparent 100%);
+    //     mix-blend-mode: color-burn;
+    //     inset: 0;
+    //     position: absolute;
+    //     z-index: 5;
+    //     opacity: .5;
+
+    // }
+
     &__inner {
         border-radius: 3.5rem 3.5rem 0 0;
         position: absolute;
@@ -163,7 +176,7 @@ body {
         &__day,
         &__month,
         &__year {
-            filter: drop-shadow(0 0 .25rem orangered) drop-shadow(0 0 .7rem rgba(orangered, .5)) drop-shadow(0 0 4rem rgba(red, .6));
+            filter: drop-shadow(0 0 .75rem orangered) drop-shadow(0 0 1.5rem rgba(orangered, .8)) drop-shadow(0 0 4rem rgba(red, .8));
         }
 
         // &__half {

@@ -27,6 +27,12 @@ function App() {
 
   return (
     <div className="main-wrap">
+        <div className="big-glow"></div>
+        <div className="top-control">
+          <div className="top-control__v-pipe"></div>
+          <div className="top-control__h-pipe"></div>
+          <div className="top-control__switch"></div>
+        </div>
       <div className="main-frame">
         <div className="main-frame__inner">
           <div className="small-frame">
@@ -52,7 +58,6 @@ function App() {
               {seconds.length === 1 ? <span>{seconds[0]}</span> : <span>{seconds[1]}</span>}
             </div>
           </div>
-         
           <div className="time placeholder">
             <div>8</div>
             <div>8</div>
@@ -69,46 +74,7 @@ function App() {
               <span>8</span>
             </div>
           </div>
-          {/* <!-- <div className="time">
-              <div className="time__hr">
-               07
-              </div>
-              <div className="time__min">
-                <span>2</span>
-                <span>4</span>
-              </div>
-              <div className="time__half">pm</div>
-              <div className="time__day">
-                <span>3</span>
-                <span>0</span>
-              </div>
-              <div className="time__month">
-                <span>3</span>
-                <span>0</span>
-              </div>
-              <div className="time__year">
-                <span>9</span>
-                <span>3</span>
-              </div>
-          </div>
-          <div className="time placeholder">
-              <div className="time__hr">
-                <span>8</span>
-                <span>8</span>
-              </div>
-              <div className="time__min"><span>8</span>
-                <span>8</span></div>
-              <div className="time__half">
-                <span>8</span>
-                <span>8</span>
-              </div>
-              <div className="time__day"><span>8</span>
-                <span>8</span></div>
-              <div className="time__month"><span>8</span>
-                <span>8</span></div>
-              <div className="time__year"><span>8</span>
-                <span>8</span></div>
-          </div> --> */}
+         
         </div>
         <div className="main-frame__outer-line"></div>
         <div className="main-frame__inner-line"></div>
