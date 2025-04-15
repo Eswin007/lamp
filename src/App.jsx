@@ -1,14 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './main.scss'
 
 function App() {
 
   const [clock, setClock] = useState(new Date());
 
-  const timer =  setInterval(() => {
-      const newTime = new Date();
-      setClock(newTime)
-  }, 1000);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setClock(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+
+  
 
   // const time = new Date(clock).toLocaleTimeString('en-US', {hour12:true});
   const hours = [...clock.getHours().toLocaleString()];
@@ -28,6 +34,11 @@ function App() {
   return (
     <div className="main-wrap">
         <div className="big-glow"></div>
+        <div className="bracket bracket__l1">
+          <div className="bracket__clamp"></div>
+          <div className="bracket__arm"></div>
+          <div className="bracket__knob"></div>
+        </div>
         <div className="top-control">
           <div className="top-control__v-pipe"></div>
           <div className="top-control__h-pipe"></div>
