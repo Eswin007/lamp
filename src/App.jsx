@@ -24,10 +24,19 @@ function App() {
   const year = [...clock.getFullYear().toString()];
   const seconds = [...clock.getSeconds().toString()];
 
-  const DoubleDigit = ({ value }) => (
+  const DoubleDigit = ({ value, type }) => (
   <>
+    {type === 'year' ? 
+    <>
+    <div>{value[2]}</div>
+    <div>{value[3]}</div> </> : 
+    (
+      <>
     <div>{value.length === 1 ? '\u00A0' : value[0]}</div>
     <div>{value.length === 1 ? value[0] : value[1]}</div>
+    </>
+    )
+  }
   </>
 );
 
@@ -35,6 +44,17 @@ function App() {
     <div className="main-wrap">
         <div className="big-glow"></div>
         <div className="bracket bracket__l1">
+          <div className="bracket__clamp"></div>
+          <div className="bracket__arm"></div>
+          <div className="bracket__knob"></div>
+        </div>
+        <div className="bracket bracket__l2">
+          <div className="bracket__clamp"></div>
+          <div className="bracket__arm"></div>
+          <div className="bracket__knob"></div>
+        </div>
+        
+        <div className="bracket bracket__l3">
           <div className="bracket__clamp"></div>
           <div className="bracket__arm"></div>
           <div className="bracket__knob"></div>
@@ -61,7 +81,7 @@ function App() {
                 <DoubleDigit value={minutes} />
                 <DoubleDigit value={day} />
                 <DoubleDigit value={month} />
-                <DoubleDigit value={year} />
+                <DoubleDigit value={year} type='year' />
 
           
             <div className="time__half">
