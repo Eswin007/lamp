@@ -42,22 +42,64 @@ function App() {
 
   return (
     <div className="main-wrap">
+      <div className="base">
+
+            <div className="base__clamps">
+              <span></span>
+              <span></span>
+            </div>
+            <div className="base__circle"></div>
+            <div className="base__box"></div>
+            <div className="base-center">
+              <div className="base-center__main"></div>
+              <div className="base-center__fork-set">
+                <div className="base-center__top"></div>
+                <div className="base-center__legs">
+                  <span></span><span></span><span></span>
+                </div>
+                <div className="base-center__bottom"></div>
+          <button className="switch"></button>
+
+              </div>
+            </div>
+          </div>
         <div className="big-glow"></div>
-        <div className="bracket bracket__l1">
-          <div className="bracket__clamp"></div>
-          <div className="bracket__arm"></div>
-          <div className="bracket__knob"></div>
-        </div>
-        <div className="bracket bracket__l2">
-          <div className="bracket__clamp"></div>
-          <div className="bracket__arm"></div>
-          <div className="bracket__knob"></div>
+        <div className="left-bracket">
+          <div className="bracket bracket__l1">
+            <div className="bracket__clamp"></div>
+            <div className="bracket__arm"></div>
+            <div className="bracket__knob"></div>
+          </div>
+          <div className="bracket bracket__l2">
+            <div className="bracket__clamp"></div>
+            <div className="bracket__arm"></div>
+            <div className="bracket__knob"></div>
+          </div>
+          
+          <div className="bracket bracket__l3">
+            <div className="bracket__clamp"></div>
+            <div className="bracket__arm"></div>
+            <div className="bracket__knob"></div>
+          </div>
         </div>
         
-        <div className="bracket bracket__l3">
-          <div className="bracket__clamp"></div>
-          <div className="bracket__arm"></div>
-          <div className="bracket__knob"></div>
+        <div className="right-bracket">
+          <div className="bracket bracket__l1">
+            <div className="bracket__clamp"></div>
+            <div className="bracket__arm"></div>
+            <div className="bracket__knob"></div>
+          </div>
+          <div className="bracket bracket__l2">
+            <div className="bracket__clamp"></div>
+            <div className="bracket__arm"></div>
+            <div className="bracket__knob"></div>
+          </div>
+          
+          <div className="bracket bracket__l3">
+            <div className="bracket__clamp"></div>
+            <div className="bracket__arm"></div>
+            <div className="bracket__knob"></div>
+          </div>
         </div>
         <div className="top-control">
           <div className="top-control__v-pipe"></div>
@@ -65,6 +107,7 @@ function App() {
           <div className="top-control__switch"></div>
         </div>
       <div className="main-frame">
+          
         <div className="main-frame__inner">
           <div className="small-frame">
             <div className="small-frame__inner"></div>
@@ -111,6 +154,7 @@ function App() {
         <div className="main-frame__inner-line"></div>
         <div className="main-frame__center-line"></div>
       </div>
+    
     </div>
  
 
