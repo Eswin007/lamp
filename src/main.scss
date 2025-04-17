@@ -518,6 +518,8 @@ body {
             background-image: radial-gradient(rgb(255, 208, 0) 20%, rgb(141, 53, 21) 55%, #111 70%);
             box-shadow: 0 -2px .25rem rgba(#444, .4);
             box-shadow: 0 0 2px 0px white;
+            transition: all 1s ease;
+
         }
 
         &__box {
