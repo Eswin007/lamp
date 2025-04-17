@@ -4,6 +4,7 @@ import './main.scss'
 function App() {
 
   const [clock, setClock] = useState(new Date());
+  const [power, setPower] = useState(true)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -41,7 +42,7 @@ function App() {
 );
 
   return (
-    <div className="main-wrap">
+    <div className={`main-wrap ${power && 'off'}`}>
       <div className="base">
 
             <div className="base__clamps">
@@ -58,7 +59,7 @@ function App() {
                   <span></span><span></span><span></span>
                 </div>
                 <div className="base-center__bottom"></div>
-          <button className="switch"></button>
+          <button className="switch" onClick={()=>setPower((prev)=> !prev)}></button>
 
               </div>
             </div>
